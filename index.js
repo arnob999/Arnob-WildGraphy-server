@@ -65,7 +65,6 @@ async function run() {
             res.send(photos);
         })
 
-
         //to load specific data
         app.get('/photos/:id', async (req, res) => {
             const id = req.params.id;
