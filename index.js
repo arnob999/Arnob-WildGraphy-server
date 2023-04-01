@@ -7,12 +7,8 @@ const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 require('dotenv').config()
 const port = process.env.PORT || 5000;
 
-
-
 app.use(cors());
 app.use(express.json());
-
-
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.xgfn0ly.mongodb.net/?retryWrites=true&w=majority`;
 
@@ -90,10 +86,10 @@ run().catch(err => console.log(err))
 
 
 app.get('/', (req, res) => {
-    res.send("arnob wild graphy is running successfully");
+    res.send("wild graphy is running successfully");
 
 })
 
 app.listen(port, () => {
-    console.log(`arnob wild graphy ${port}`);
+    console.log(`wild graphy ${port}`);
 })
